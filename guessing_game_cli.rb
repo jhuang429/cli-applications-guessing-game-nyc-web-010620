@@ -1,5 +1,13 @@
+def welcome
+   puts "Welcome to the guessing game!"
+end
+
+def prompt 
+end
+  
+
 def run_guessing_game
-  puts "Welcome to the guessing game!"
+ welcome
   puts "Guess a number between 1 and 6"
   guess = gets.chomp
   random_number = rand(6) + 1
