@@ -3,14 +3,18 @@ def welcome
 end
 
 def prompt 
+  puts "Guess a number between 1 and 6"
 end
   
+def generate_random_number
+ rand(6) + 1
+end
 
 def run_guessing_game
- welcome
-  puts "Guess a number between 1 and 6"
+  welcome
+  prompt
   guess = gets.chomp
-  random_number = rand(6) + 1
+  
 
   if guess.to_i == random_number
     puts "You guessed the correct number!"
