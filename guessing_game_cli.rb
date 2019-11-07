@@ -8,6 +8,7 @@ end
   
 def input
   gets.chomp
+end
   
 def generate_random_number
  rand(6) + 1
